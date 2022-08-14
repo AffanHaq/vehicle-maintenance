@@ -67,7 +67,7 @@ img{
     display: inline-block;
     padding: var(--btn-padding);
     font-weight: 500;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
     cursor: pointer;
     transition: all 300ms ease;
     font-size: 0.9rem;
@@ -185,7 +185,7 @@ nav .navs:hover{
 }
 
 .vehicle-heading{
-    margin-top: 4.7rem;
+    margin-top: 6rem;
     text-align: center;
     color: var(--color-primary);
 }
@@ -312,4 +312,161 @@ hr{
 .bike-svg{
     width: 56rem;
     height: 28rem;
+}
+
+/* PACKAGES */
+
+.package-section{
+    width: 100%;
+    padding: var(--card-padding);
+}
+
+.packages{
+    gap: 0;
+    display: flex;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    justify-content: center;
+}
+
+.packge-heading{
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.package-card{
+    box-shadow: 0px 5px 10px 10px  #8888885f;
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+}
+
+
+.package-card img{
+    width: 9rem;    
+    transform: translate(-3rem,-5rem);
+    padding: 0;
+    height: 5rem;
+    position: absolute;
+}
+
+.package-offers{
+    margin-top: 2rem;
+}
+
+.package-premium{
+    z-index: 1;
+    margin-bottom: 3rem;
+    background-color: #ffa1a1;
+}
+
+.package-standard{
+    rotate: -10deg;
+    background: #16161682;
+    transition: 1s;
+}
+
+.package-elite{
+    rotate: 10deg;
+    background: #ffe07c;
+    transition: 3s;
+}
+
+.package-card .footer{
+    margin-top: 1rem;
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 2rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.package-standard .footer{
+    background-color: #16161624;
+}
+.package-premium .footer{
+    background-color: #ff7f7f7f;
+}
+.package-elite .footer{
+    background-color: #ecc33d66;
+}
+
+.package-card .footer:hover{
+    opacity: 0.7;
+    transition: ease;
+}
+
+/* =================================== CONTACT US ================================ */
+.contact-us-section{
+    padding: 0 10rem;
+    margin-left: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card{
+    padding: var(--card-padding);
+    background: var(--color-white);
+    /* border-radius: var(--card-border-radius); */
+}
+
+.sub-heading{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.inner-card-form{
+    /* display: flex; */
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.inner-card-form textarea{
+    resize: none;
+    width: 100%;
+    height: 9.3rem;
+    border-radius: var(--card-border-radius);
+    background: var(--color-light);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.inner-card-form input{
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    background: var(--color-light);
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.info{
+    background: var(--color-primary);
+    padding: 2rem;
+    color: var(--color-white);
+    width: 35%;
+}
+
+.info ul{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+.info i{
+    font-size: 1.7rem;
+    border: 1px var(--color-white) solid;
+    border-radius: 100%;
+    padding:  0 0.4rem 0 0.4rem;
+    margin-right: 1rem;
+}
+
+
+footer{
+    background: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    height: 4rem;
 }
