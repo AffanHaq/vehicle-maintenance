@@ -241,7 +241,7 @@ hr{
     border-radius: var(--card-border-radius);
 }
 
-.basket-icon button{
+.getacall-icon button{
     position: fixed;
     bottom: 0.8rem;
     right: 1rem;
@@ -255,23 +255,12 @@ hr{
     transition: 5s;
 }
 
-.basket-icon button:hover{
+.getacall-icon button:hover{
     opacity: 1;
     font-size: 1.5rem;
     transition: 2s;
 }
 
-.basket{
-    position: fixed;
-    bottom: 0.8rem;
-    right: 1rem;
-    background: white;
-    box-shadow: 0 0 7px 4px  #88888841;
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    display: none;
-    cursor: pointer;
-}
 
 .services-pane{
     margin-left: 4rem;
@@ -526,6 +515,95 @@ footer{
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 }
 
+.book-appointment{
+    background: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    text-align: center;
+    display: none;
+    place-items: center;
+    font-size: 0.9rem;
+}
+.appointment-card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 40%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+.getacall{
+    background: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+}
+.getacall-card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 30%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+#exitCall{
+    position: fixed;
+    top: 25%;
+    left: 62%;
+    font-size: large;
+}
+
+#exitCall:hover{
+    border-radius: 50%;
+    padding: 0 6px 0 6px;
+    background: red;
+    border: 1px var(--color-white) solid;
+    color: var(--color-white);
+}
+
+#closeAppointment{
+    position: fixed;
+    top: 7rem;
+    left: 63rem;
+    font-size: large;
+}
+
+#closeAppointment:hover{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+.appointment-form input{
+    width: 100%;
+    border-radius: 0.5rem;
+    background: var(--color-light);
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.appointment-form select{
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    background: var(--color-light);
+    height: 3rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
 .car-list-modal{
     display: flex;
     justify-content: space-between;
@@ -618,4 +696,8 @@ footer{
 
 #wash{
     display: none;
+}
+
+.actions-service{
+    margin-top: 5rem;
 }

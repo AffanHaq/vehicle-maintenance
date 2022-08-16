@@ -17,10 +17,10 @@
     <div class="container">
       <h1 class="nav-title">Vehicle Care+</h1>
       <div class="navigations">
-          <a href="#"><label class="navs create-package">Services</label></a>
-          <a href="#"><label class="navs packages">Packages</label></a>
-          <a href="#"><label class="navs contact-us">Contact Us</label></a>
-          <a href="#"><label class="navs about-us">About Us</label></a>
+          <a href="#servicenav"><label class="navs create-package">Services</label></a>
+          <a href="#packagenav"><label class="navs packages">Packages</label></a>
+          <a href="#contactnav"><label class="navs contact-us">Contact Us</label></a>
+          <a href="#about-us"><label class="navs about-us">About Us</label></a>
       </div>
     </div>
   </nav>
@@ -51,7 +51,7 @@
 <!-- ================================= SECTION 2 ABOUT US ===================================== -->
 
 
-      <h2 class="vehicle-heading-two">WHO ARE WE?</h2>
+      <h2 class="vehicle-heading-two" id="about-us">WHO ARE WE?</h2>
       <div class="text-muted sub-heading">A COMPANY WHO LOVE THEIR CUSTOMERS</div>
       <div class="about-us-tab">
         <div class="about">
@@ -59,7 +59,7 @@
         </div>
       </div>
 <!-- =============================== SERVICES ============================== -->
-      <div class="services">
+      <div class="services" id="servicenav">
 
         <h2 class="vehicle-heading-two">SERVICES</h2>
         <div class="text-muted sub-heading">SOME SERVICES WE OFFER</div>
@@ -559,6 +559,10 @@
           </svg>
           <div class="detail-card">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rerum error eos totam voluptatum eveniet ipsum atque esse, ex eum? Ullam harum reiciendis aperiam, consequuntur dolor officiis pariatur! Molestiae tempore recusandae aut molestias reprehenderit, repellat, quidem, qui minus ab hic quis id perspiciatis voluptatem dignissimos asperiores quae minima fugit dolorum veritatis. Consequuntur quibusdam eos necessitatibus, quo nesciunt laborum sequi! Libero illum eaque eveniet magni iure ducimus odit dolorem quisquam veritatis atque. Quidem corporis laborum fuga et, veniam doloremque itaque iste.
+            <div class="actions-service">
+              <button id="bookAppointmentTruck" class="btn btn-primary">BOOK AN EXPERT</button>
+              <button id="openServiceCardTruck" class="btn btn-primary">SERVICES OFFERED FOR TRUCK?</button>
+            </div>
           </div>
         </div>
       </div>
@@ -1330,6 +1334,10 @@
 
           <div class="detail-card">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rerum error eos totam voluptatum eveniet ipsum atque esse, ex eum? Ullam harum reiciendis aperiam, consequuntur dolor officiis pariatur! Molestiae tempore recusandae aut molestias reprehenderit, repellat, quidem, qui minus ab hic quis id perspiciatis voluptatem dignissimos asperiores quae minima fugit dolorum veritatis. Consequuntur quibusdam eos necessitatibus, quo nesciunt laborum sequi! Libero illum eaque eveniet magni iure ducimus odit dolorem quisquam veritatis atque. Quidem corporis laborum fuga et, veniam doloremque itaque iste.
+            <div class="actions-service">
+              <button id="bookAppointmentCar" class="btn btn-primary">BOOK AN EXPERT</button>
+              <button id="openServiceCardCar" class="btn btn-primary">SERVICES OFFERED FOR CAR?</button>
+            </div>
           </div>
         </div>
       </div>
@@ -2153,13 +2161,17 @@
         </svg>
         <div class="detail-card">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rerum error eos totam voluptatum eveniet ipsum atque esse, ex eum? Ullam harum reiciendis aperiam, consequuntur dolor officiis pariatur! Molestiae tempore recusandae aut molestias reprehenderit, repellat, quidem, qui minus ab hic quis id perspiciatis voluptatem dignissimos asperiores quae minima fugit dolorum veritatis. Consequuntur quibusdam eos necessitatibus, quo nesciunt laborum sequi! Libero illum eaque eveniet magni iure ducimus odit dolorem quisquam veritatis atque. Quidem corporis laborum fuga et, veniam doloremque itaque iste.
+          <div class="actions-service">
+            <button id="bookAppointmentBike" class="btn btn-primary">BOOK AN EXPERT</button>
+            <button id="openServiceCardBike" class="btn btn-primary">SERVICES OFFERED FOR BIKE?</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ========================== PACKAGES =============================== -->
-      <h2 class="vehicle-heading-two">PACKAGES</h2>
+      <h2 class="vehicle-heading-two" id="packagenav">PACKAGES</h2>
       <div class="text-muted sub-heading">OUR MOST LOVED PACKAGES</div>
       <div class="package-section">
         <div class="packages">
@@ -2224,7 +2236,7 @@
           </div>
       </div>
         <!-- ======================================= CONTACT US ========================== -->
-        <h2 class="vehicle-heading-two">CONTACT US</h2>
+        <h2 class="vehicle-heading-two" id="contactnav">CONTACT US</h2>
         <div class="text-muted sub-heading">WE ALWAYS LOVE TO HEAR FROM YOU!</div>
         <div class="contact-us-section">
 
@@ -2514,23 +2526,62 @@
   </div>
 </div>
 
-
-<div class="basket-icon">
-  <button class="btn-cart"><i class="uil uil-shopping-cart"></i> </button>
-</div>
-
-<div class="basket">
-  <div class="basket-box">
-    <span class="basket-head" style="display: flex; justify-content: space-between;">
-      <span><h2><i class="uil uil-shopping-cart"></i> YOUR ITEMS &nbsp;</h2></span>
-      <span id="closeBasketicon"><i class="uil uil-multiply"></i></span>
-    </span>
-      <ul class="basket-list">
-        <li>1xOil Change (Car)</li>
-        <li>1xTunning (Car)</li>
-      </ul>
+<!-- =================== APPOINTMENT MODAL ================================ -->
+<div class="book-appointment">
+  <div class="appointment-card">
+    <div class="appointment-head">
+      <span id="closeAppointment"><i class="uil uil-multiply"></i></span>
+      <h2 class="vehicle-heading-two">BOOK AN APPOINTMENT</h2>
+      <div class="text-muted sub-heading">LET US MEET YOU LOVELY VEHICLE</div>
+    </div>
+    <div class="appointment-body">
+      <form action="" class="appointment-form">
+        <input type="text" placeholder="Name">
+        <input type="tel" placeholder="Phone Number" pattern="03[0-9]{2}-(?!1234567)(?!1111111)(?!7654321)[0-9]{7}">
+        <select name="selectService" placeholder="Select Service">
+          <option value="tune">Tunning and Maintenance - Improve Average and Performance</option>
+          <option value="eng">Engine Work - Overhauling and Replacement</option>
+          <option value="ac">AC Maintenance - Better Cooling and Chilling</option>
+          <option value="oil">Oil Checkup/Change - For Smooth Driving</option>
+          <option value="wash">Wash - Clean and Shinning Vehicle</option>
+          <option value="inspect">Used Vehicle Inspection - Expert Opinion</option>
+        </select>
+        <input type="text" placeholder="Complete Address">
+        <input type="text" id="appoint-vehicle-type" placeholder="VEHICLE TYPE: CAR" readonly style="text-align: center;">
+        <input type="datetime-local" name="appointmentTime">
+        <button class="btn btn-primary">Book An Expert</button>
+      </form>
+    </div>
   </div>
 </div>
+
+
+<div class="getacall-icon">
+  <button class="btn-cart"> Get A Call </button>
+</div>
+
+<div class="getacall">
+  <div class="getacall-card">
+    <div class="getacall-head">
+      <span id="exitCall"><i class="uil uil-multiply" style="text-align: right;"></i></span>
+      <h2 class="vehicle-heading-two">LOOKING TO BOOK A MECHANIC</h2>
+      <div class="text-muted sub-heading">GET A CALL BACK</div>
+    </div>
+    <div class="getacall-body">
+     <form action="" class="appointment-form">
+      <input type="text" placeholder="Your Name">
+      <input type="tel" placeholder="Phone Number" pattern="03[0-9]{2}-(?!1234567)(?!1111111)(?!7654321)[0-9]{7}">
+      <select name="vehicleType">
+        <option value="car">CAR</option>
+        <option value="car">TRUCK</option>
+        <option value="car">BIKE</option>
+      </select>
+      <button class="btn btn-primary">Get a Call Back</button>
+     </form>
+    </div>
+  </div>
+</div>
+
 
   <script src="./index.js"></script>
 </body>
