@@ -1,3 +1,5 @@
+const menuItems = document.querySelectorAll(".menu-item");
+
 // Modal
 
 const CarModal =document.querySelector('.car-modal');
@@ -104,14 +106,15 @@ truckServiceModalOpenner.addEventListener('click', () => {
     truckModal.style.display = 'grid';
 });
 
-cartButton.addEventListener('click', openList);
-closeBasketicon.addEventListener('click', closeList)
+// cartButton.addEventListener('click', openList);
+// closeBasketicon.addEventListener('click', closeList)
 
 // Modal
 
 const changeActiveClass = () =>{
     menuItems.forEach(item =>{
         item.classList.remove('active');
+        console.log('removing....')
     })
 }
 
